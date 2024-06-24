@@ -76,7 +76,7 @@
         </div>
     </section>
 
-    <section id="about">
+   
         <div class="container">
             <h2>교회 소개</h2>
             <p>노원구 상계동에 위치한 대한예수교장로회 첫걸음교회입니다 :)<br><br>
@@ -86,7 +86,7 @@
                 📚 성경이 삶의 기준인 '복음교회'<br><br>
                 서울시 노원구 동일로 1382 4층.</p>
             <p>첫걸음교회 유튜브 : <a href="https://www.youtube.com/channel/UCvZF4uK91Dd6JbCHx6-Sb2Q" target="_blank">첫걸음교회 유튜브</a></p>
-    </section>
+    
 
     <section id="services">
         <div class="container">
