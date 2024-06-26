@@ -1,128 +1,105 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>첫걸음교회</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-        }
-        .navbar {
-            margin-bottom: 20px;
-        }
-        header, section, footer {
-            padding: 40px 0;
-        }
-        section {
-            background-color: #f8f9fa;
-            margin-bottom: 20px;
-        }
-        footer {
-            background-color: #343a40;
-            color: #ffffff;
-            padding: 20px 0;
-        }
-        .hero-section {
-            background: url('hero-image.jpg') no-repeat center center/cover;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-        .hero-section h1 {
-            font-size: 3rem;
-        }
-        .hero-section p {
-            font-size: 1.5rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Jeju</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div id="container">    
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">첫걸음교회</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">교회 소개</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">예배 시간</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">연락처</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/프로젝트/공휴일식사나눔운동본부%20활동사진.html" target="_blank">공휴일식사나눔운동본부 활동사진</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="openFullscreenWindow('http://127.0.0.1:5500/프로젝트/찾아오시는%20길.html')">찾아오시는 길</a></li>
-                </ul>
-            </div>
-        </nav>
+      <div id="logo">
+        <a href="index.html">
+          <h1> <img src="로고.png" alt="교회 로고" class="img-fluid"></h1>
+        </a>
+      </div>
+      <nav>
+        <ul id="topMenu">
+          <li><a href="#">첫 방문<span>▼</span></a>
+            <ul>
+              <li><a href="#">교회 소개</a></li>
+              <li><a href="#">목회자 소개</a></li>
+            </ul>
+          </li>
+          <li><a href="#">교회 부서 활동 사진<span>▼</span></a>
+            <ul>
+              <li><a href="#">영아부</a></li>
+              <li><a href="#">초등부</a></li>
+              <li><a href="#">청소년부</a></li>
+              <li><a href="#">청년부</a></li>
+              <li><a href="#">중장년부</a></li>
+            </ul>
+          </li>
+          <li><a href="#">공휴일 식사나눔 운동본부 갤러리</a></li>
+        </ul>
+      </nav>
     </header>
+    <div id="slideShow">
+      <div id="slides">
+        <img src="images/교회이미지.PNG" alt="교회 이미지" class="resizable-image">
+        <img src="" alt="">
+        <img src="images/photo-3.jpg" alt="">
+        <button id="prev">&lang;</button>
+        <button id="next">&rang;</button>
+      </div>
+    </div>
+    <div id="contents">
+      <div id="tabMenu">
+        <input type="radio" id="tab1" name="tabs" checked>
+        <label for="tab1">공지사항</label>
+        <input type="radio" id="tab2" name="tabs">
+        <label for="tab2">갤러리</label>      
+        <div id="notice" class="tabContent">
+          <h2>공지사항 내용입니다.</h2>
+          <ul>            
+            <li>첫걸음교회 5주년 행사를 하였습니다!</li>         
+          </ul>
+        </div>
+        <div id="gallery" class="tabContent">
+          <h2>갤러리 내용입니다.</h2>
+          <ul>
+            <li><img src="images/img-4.jpg"></li>
+            <li><img src="images/img-4.jpg"></li>
+            <li><img src="images/img-4.jpg"></li>
+            <li><img src="images/img-4.jpg"></li>
+            <li><img src="images/img-4.jpg"></li>
+            <li><img src="images/img-4.jpg"></li>                     
+          </ul>
+        </div>        
+      </div>
+      <div id="links">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="images/찾아오시는 길 이미지.PNG" alt="찾아오시는 길" class="coming"> 
+              <p>찾아오시는 길</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/섬기는 분들 이미지.PNG" alt="섬기는 분들" class="love"> 
+              <p>섬기는 분들</p>
+            </a>            
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/유튜브 이미지.PNG" alt="섬기는 분들" class="youtube"> 
+              <p>첫걸음교회 유튜브</p>
+            </a>            
+          </li>
+        </ul>
+      </div>
+    </div>  
+    <footer>    
+      <div id="bottomMenu">
 
-    <section class="hero-section text-center">
-        <div class="container">
-            <h1>환영합니다!</h1>
-            <p>첫걸음교회에 오신 것을 환영합니다</p>
-        </div>
-    </section>
-    <section id="about">
-        <div class="container">
-            <h2>교회 소개</h2>
-            <img src="로고.png" alt="교회 로고" class="img-fluid">
-            <p>노원구 상계동에 위치한 대한예수교장로회 첫걸음교회입니다 :)<br><br>
-                🙋‍ 전교인이 함께 사역을 이루어 가는 '교인교회'<br>
-                👨‍ 상처에 반창고가 되어주는 '이웃교회'<br>
-                🧕 건축보다 인류애에 관심있는 '인류교회'<br>
-                📚 성경이 삶의 기준인 '복음교회'<br><br>
-                서울시 노원구 동일로 1382 4층.</p>
-            <p>첫걸음교회 유튜브 : <a href="https://www.youtube.com/channel/UCvZF4uK91Dd6JbCHx6-Sb2Q" target="_blank">첫걸음교회 유튜브</a></p>
-        </div>
-    </section>
-    <hr>
-    <section id="services">
-        <div class="container">
-            <h2>예배 시간</h2>
-            <ul>
-                <li>주일 예배: 매주 일요일 오전 11시</li>
-                <li>수요 예배: 매주 수요일 오후 8시</li>
-            </ul>
-        </div>
-    </section>
-    <hr>
-    <section id="contact">
-        <div class="container">
-            <h2>연락처</h2>
-            <ul>
-                <li>전화: 010-8943-9068</li>
-            </ul>
-        </div>
-    </section>
-    <hr>
-    <footer>
-        <div class="container text-center">
-            <p><섬기는 사람들></p>
-            <p>담임목사 : 김대영</p>
-            <p>전도사 : 박희지</p>
-            <p>행동으로 실천하는 첫걸음교회! 직접 오셔서 느껴보십시요!</p>
-        </div>
-    </footer>
+      <div id="company">
+        <p>서울시 노원구 동일로 1382 4층 (대표전화)010-8943-9068</p> 
+      </div>     
+    </footer>  
+  </div> 
 
-    <!-- Bootstrap JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        function openFullscreenWindow(url) {
-            var newWindow = window.open(url, '_blank');
-            newWindow.moveTo(0, 0);
-            newWindow.resizeTo(screen.width, screen.height);
-        }
-    </script>
+  <script src="js/slideshow.js"></script>
 </body>
 </html>
